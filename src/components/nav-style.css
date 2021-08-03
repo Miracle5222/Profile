@@ -1,0 +1,40 @@
+nav{
+    height: 100px;
+    width: 100%;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 30px rgba(0,0,0,.2);
+    background-color: rgb(19, 18, 18);
+    
+}
+nav .navigation{
+    display: flex;
+    list-style-type: none;
+    text-decoration: none;
+}
+nav .navigation li{
+    
+    padding: 25px;
+    font-size: 1rem;
+    
+}
+nav .navigation a{
+    color: rgb(255, 196, 0);
+    text-decoration: none;
+    
+    
+}
+nav .navigation a:active{
+    
+    text-decoration: none;
+   
+    
+}
+nav .navigation a:hover{
+    color: rgb(206, 159, 6);
+    text-decoration: underline;
+   
+    
+}

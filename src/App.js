@@ -1,15 +1,33 @@
+import React from 'react'
+import {
+  Route, Switch
 
-import './App.css';
+} from "react-router-dom";
+
+import Services from './pages/services';
+import Footer from './pages/footer';
+import Navbar from './components/navbar';
+import Home from './pages/home';
+
+
 
 function App() {
+
   return (
-    <div className="App">
-     <p>Hello world</p>
-     <h1>I'm Roneil Bansas</h1>
-     <address>Pob. Mahayag Zamboanga Del Sur</address>
-     <h2>Dejavu</h2>
+    <div >
+      <Navbar />
+      <Switch>
+        <Route exact path='/' component={Home}></Route>
+        <Route path='/Services' component={Services}></Route>
+      </Switch>
+      <Footer/>
     </div>
-  );
+
+  )
+
+
+
 }
 
 export default App;
+
