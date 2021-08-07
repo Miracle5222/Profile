@@ -1,0 +1,78 @@
+$height:40px;
+$width:40px;
+
+.sm{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+
+    .m{
+        margin: 8px 12px;
+
+    }
+    
+    &__facebook{
+   
+        width: $width - 5px;
+        height: $height - 5px;
+        background: url('../images/facebook.png' ) ; 
+        background-position: center;
+        background-size: cover;
+        transition: .2s;
+        cursor: pointer;
+    
+        
+    }
+    &__instagram{
+        width: $width - 5px;
+        height: $height - 5px;
+        background: url('../images/iinstagram.svg');
+        background-position: center;
+ 
+        background-size: cover;
+        transition: .2s;
+        cursor: pointer;
+     
+      
+    }
+    &__linkedIn{
+        width: $width;
+        height: $height;
+        background: url('../images/llinkedin.svg');
+      
+        background-position: center;
+        background-size: cover;
+        transition: .2s ;
+        cursor: pointer;
+    }
+    &__instagram:hover{
+        background: url('../images/iinstagram.svg');
+        width: $width;
+        height: $height;
+        background-repeat: no-repeat;
+        transform: translateX(10px);
+      
+    }
+    &__facebook:hover{
+        background: url('../images/facebook.png' ) ; 
+        width: $width;
+        height: $height;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transform: translateX(10px);
+     
+    }
+    &__linkedIn:hover{
+        background: url('../images/llinkedin.svg');
+        width: $width - 5px;
+        height: $height - 5px;
+        background-repeat: no-repeat;
+        transform: translateX(10px);
+        
+    }
+ 
+}

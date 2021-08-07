@@ -1,0 +1,64 @@
+
+$color-gold: #FFB800;
+$color-red: #f10236;
+
+.container{
+    height: 80px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color:$color-gold;
+    font-family: 'Cinzel', serif;
+
+    &__menu ul{
+        display: flex;     
+    }
+    &__menu ul li{
+        list-style-type: none;
+    }
+  
+    &__menu ul li:not(:nth-of-type(5)){
+        padding-right: 25px;
+        
+    }
+    &__menu ul li a{
+        color:$color-gold;
+        text-decoration: none;
+        font-weight: bold; 
+    }
+    &__menu ul li  a:hover{
+        padding-bottom: 5px;
+        color:gold;
+        border-bottom: solid $color-gold 1px;
+    }
+    &__button{
+      
+
+        &--subscribe{
+            padding:8px 12px;
+            font-family: inherit;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            background-color: $color-red;
+            color: #ffffff;
+            cursor: pointer;
+            margin-right: 20px;
+            letter-spacing: 2px;
+      
+        }
+        &--signIn{
+            font-weight: bold;
+            background: none;
+            font-family: inherit;
+            font-size: .8rem;
+            border: none;
+            color: $color-gold;
+            cursor: pointer;
+
+        }
+    }
+
+}
