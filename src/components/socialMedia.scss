@@ -1,5 +1,18 @@
-$height:40px;
-$width:40px;
+$height:50px;
+$width:70px;
+$color-gold: #ffb700;
+$color-red: #f10236;
+
+@mixin media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: $height;
+    width:$width ;
+    background-color: $color-gold;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
 
 .sm{
     position: fixed;
@@ -7,72 +20,73 @@ $width:40px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 80vh;
+    height: 100vh;
 
-    .m{
-        margin: 8px 12px;
-
-    }
-    
-    &__facebook{
-   
-        width: $width - 5px;
-        height: $height - 5px;
-        background: url('../images/facebook.png' ) ; 
-        background-position: center;
-        background-size: cover;
-        transition: .2s;
+    .cursor{
         cursor: pointer;
-    
-        
+    }
+
+    &__facebook{
+        @include media;
+
+        &-logo{
+            background: url('../images/facebook.svg');
+            background-position: center;
+            background-size: cover;
+            width:40px;
+            height: 40px;
+            padding: 10px;
+            transition: .2s ease-in;
+        }
+        &-logo:hover{
+            background: url('../images/facebook.png');
+            background-position: center;
+            background-size: cover;
+            transform: translateY(-10px);
+        }
+
+
     }
     &__instagram{
-        width: $width - 5px;
-        height: $height - 5px;
-        background: url('../images/iinstagram.svg');
-        background-position: center;
- 
-        background-size: cover;
-        transition: .2s;
-        cursor: pointer;
-     
-      
+        @include media;
+        &-logo{
+            background: url('../images/instagram.svg');
+            background-position: center;
+            background-size: cover;
+            width:40px;
+            height: 40px;
+            padding: 10px;
+            transition: .2s ease-in;
+        }
+        &-logo:hover{
+            background: url('../images/iinstagram.svg');
+            transform: translateY(-10px);
+        }
+
     }
-    &__linkedIn{
-        width: $width;
-        height: $height;
-        background: url('../images/llinkedin.svg');
-      
-        background-position: center;
-        background-size: cover;
-        transition: .2s ;
-        cursor: pointer;
+    &__linkedin{
+        @include media;
+        &-logo{
+            background: url('../images/linkedin.svg');
+            background-position: center;
+            background-size: cover;
+            width:40px;
+            height: 40px;
+            padding: 10px;
+            transition: .2s ease-in;
+        }
+        &-logo:hover{
+            background: url('../images/llinkedin.svg');
+            transform: translateY(-10px);
+        }
+
+
     }
-    &__instagram:hover{
-        background: url('../images/iinstagram.svg');
-        width: $width;
-        height: $height;
-        background-repeat: no-repeat;
-        transform: translateX(10px);
-      
+    &__linkedin:hover,&__instagram:hover,&__facebook:hover{
+        background:none ;
+        transition: .2s ease-in
     }
-    &__facebook:hover{
-        background: url('../images/facebook.png' ) ; 
-        width: $width;
-        height: $height;
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        transform: translateX(10px);
-     
-    }
-    &__linkedIn:hover{
-        background: url('../images/llinkedin.svg');
-        width: $width - 5px;
-        height: $height - 5px;
-        background-repeat: no-repeat;
-        transform: translateX(10px);
-        
-    }
- 
+  
+
+  
 }
