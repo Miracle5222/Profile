@@ -1,22 +1,15 @@
-import React from 'react'
-import {
-  Route, Switch
-
-} from "react-router-dom";
-
-import HomePage from './components/home';
+import React from 'react';
 import Navbar from './components/navbar';
-
-
-
+import Home from './components/home';
+import './index.css';
 
 function App() {
 
   return (
-    <div >
+    <div className='container'>
       <Navbar />
-      <HomePage/>
-     
+      <Home/>
+      
     </div>
 
   )
@@ -26,4 +19,3 @@ function App() {
 }
 
 export default App;
-

@@ -1,45 +1,27 @@
-
 import React from 'react'
-import { Link, } from "react-router-dom";
-import './nav-style.scss';
-import Button from './button';
-import SocialMedia from './socialMedia';
-const Navbar = () => {
+import './navbar.scss';
 
-    function handleClick() {
-        document.getElementById('con').style.width = '-200px';
-    }
+
+
+function Navbar() {
+  
+
     return (
-
-        <div>
-
-            <div className={`container `} id='con'>
-                <div className='container__logo'>
-                    <h1>Noblesse</h1>
-                </div>
-                <div className='container__menu'>
-                    <ul>
-                        <li><a href='#'>Home</a></li>
-                        <li><a href='#'>Services</a></li>
-                        <li><a href='#'>Profile</a></li>
-                        <li><a href='#'>Projects</a></li>
-                        <li><a href='#'>About</a></li>
-                    </ul>
-                </div>
-                <Button />
-
-                <button className='container__menu-item' onclick={handleClick}>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-
+        <div className='navbar'>
+            <div className='navbar__logo'>
+                <a href='#'>RGB</a>
             </div>
-
+            <div className='navbar__links'>
+                <ul>
+                    <li><a href='#'>PROFILE</a></li>
+                    <li><a href='#'>MY WORK</a></li>
+                    <li><a href='#'>BLOG</a></li>
+                    <li><a href='#'>ABOUT</a></li>
+                </ul>
+            </div>
+            
         </div>
-
     )
 }
-
 
 export default Navbar;
