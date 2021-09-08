@@ -14,7 +14,8 @@ function Navbar() {
             <div className='navbar__links'>
                 <ul>
                     <li><a href='#'>PROFILE</a></li>
-                    <li><a href='#'>MY WORK</a></li>
+                    <li><a href='#'>PORTFOLIO</a></li>
+                    <li><a href='#'>RESOURCESS</a></li>
                     <li><a href='#'>BLOG</a></li>
                     <li><a href='#'>ABOUT</a></li>
                 </ul>
