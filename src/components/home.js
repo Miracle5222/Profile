@@ -28,9 +28,11 @@ function Home() {
         <div className='home'>
             <div className='home__quotes'>
                 <span>{quotes.advice}</span>
-                <button onClick={handleClick}>Generate Quotes</button>
+                <button onClick={handleClick}>Advice Me</button>
             </div>
         </div>
+      
+        
     )
 }
 

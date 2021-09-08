@@ -89,3 +89,47 @@
     }
     }
 }
+@media  screen and (max-width:620px) {
+    .navbar{
+        position: static;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(255, 255, 255);
+        width: 100vw;
+        padding: 0 20px 0 20px;
+        
+    &__logo{
+        margin-left: 0;
+        margin-bottom: 10px;
+        a{
+            
+            text-decoration: none;
+            color: rgb(87, 54, 54);
+            font-size: 2rem;
+            font-weight: bold;
+
+        }
+
+    }
+    &__links{
+        margin-right: 0;
+        ul{
+            display: flex;
+        }
+        ul li{
+            list-style-type: none;
+        
+
+        }
+        ul li a{
+            text-decoration: none;
+            color: black;
+
+        }
+    }
+    }
+}

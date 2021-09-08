@@ -4,7 +4,8 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 0 50px 0 50px;
+    
+   
 
     &__quotes{
         position: absolute;
@@ -13,8 +14,8 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
+        padding: 0 20px 0 20px;
         height: 50vh;
-        
         max-width: 800px;
 
         span{
@@ -24,30 +25,44 @@
 
         }
         button{
-            background-color: rgba(50, 232, 238, 0.555);
+            background-color: rgba(32, 73, 75, 0.555);
             box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.24);
-            color: black;
-            padding: 15px ;
+            color: rgb(255, 254, 254);
+            padding: 12px 15px ;
             border: none;
             font-size: 1.2rem;
             border-radius: 8px;
             cursor: pointer;
             margin-bottom: 80px;
-        }
-        button:hover{
-            background-color: rgba(105, 238, 243, 0.315);
-            box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.24);
-            color: black;
             
         }
+        button:hover{
+            background-color: rgba(24, 54, 56, 0.555);
+            box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.24);
+            color: rgb(228, 226, 226);
+            
+        }
+        button:focus{
+            outline: none;
+        }
+       
+       
     }
 }
 
 @media screen and(max-width:420px){
     html{
-        font-size: 12px;
+        font-size: 14px;
       }
-      .home{
+    .home{
         padding: 0 50px 0 50px;
+    }
+}
+@media screen and(width:1024px){
+    html{
+        font-size: 24px;
       }
+    .home{
+        padding: 0 50px 0 50px;
+    }
 }
